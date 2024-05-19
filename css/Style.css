@@ -39,6 +39,7 @@ body {
 }
 
 .Content {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +138,14 @@ body {
   font-size: 16px;
   color: #777;
 }
+
+:target::before {
+            content: "";
+            display: block;
+            height: 70px; /* Altura de la navbar */
+            margin-top: -70px; /* Altura de la navbar */
+            visibility: hidden;
+        }
 
 @media (width <= 420px) {
   .navbar {
