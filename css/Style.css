@@ -1,0 +1,159 @@
+body {
+  background-image: url(Img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #272838;
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.space-navbar {
+  height: 40px;
+}
+
+.nav-item {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #878787;
+  border-radius: 10px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Clasificacion-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.Clasificacion-header {
+  background: #100167;
+  color: white;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.Clasificacion-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Clasificacion-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.Campeon {
+  background-color: gold;
+  border-bottom: 1px solid #ddd;
+}
+
+.Champions {
+  background-color: skyblue;
+  border-bottom: 1px solid #ddd;
+}
+
+.Europa {
+  background-color: rgb(255, 166, 0);
+  border-bottom: 1px solid #ddd;
+}
+
+.Conferencia {
+  background-color: lightgreen;
+  border-bottom: 1px solid #ddd;
+}
+
+.Descienden {
+  background-color: lightcoral;
+  border-bottom: 1px solid #ddd;
+}
+
+.Clasificacion-item:last-child {
+  border-bottom: none;
+}
+
+.Clasificacion-position {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 16px;
+}
+
+.Clasificacion-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.Clasificacion-image img {
+  width: 100%;
+  height: auto;
+}
+
+.Clasificacion-details {
+  flex-grow: 1;
+}
+
+.Clasificacion-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.Clasificacion-points {
+  font-size: 16px;
+  color: #777;
+}
+
+@media (width <= 420px) {
+  .navbar {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .space-navbar {
+    height: 200px;
+  }
+  .Clasificacion-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Clasificacion-position {
+    margin-bottom: 8px;
+  }
+  .Clasificacion-image {
+    margin-bottom: 8px;
+  }
+}
