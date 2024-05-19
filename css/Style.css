@@ -141,7 +141,7 @@ body {
 
 [id] {
     scroll-margin-top: 70px;
-    visibility: hidden;
+    
 }
 
 @media (width <= 420px) {
