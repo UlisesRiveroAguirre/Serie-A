@@ -139,12 +139,9 @@ body {
   color: #777;
 }
 
-:target::before {
-            content: "";
-            display: block;
-            height: 200px;
-            visibility: hidden;
-        }
+[id] {
+    scroll-margin-top: 70px;
+}
 
 @media (width <= 420px) {
   .navbar {
