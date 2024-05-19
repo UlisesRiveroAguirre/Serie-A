@@ -143,7 +143,6 @@ body {
             content: "";
             display: block;
             height: 200px;
-            margin-top: -200px;
             visibility: hidden;
         }
 
