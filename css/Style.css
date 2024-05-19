@@ -39,7 +39,6 @@ body {
 }
 
 .Content {
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +140,7 @@ body {
 
 [id] {
     scroll-margin-top: 70px;
+    visibility: hidden;
 }
 
 @media (width <= 420px) {
