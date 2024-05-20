@@ -138,15 +138,6 @@ body {
   color: #777;
 }
 
-:target::before {
-    content: "";
-    display: block;
-    height: 200px;
-    margin-top: -100px;
-    visibility: hidden;
-}
-
-
 @media (width <= 473px) {
   .navbar {
     flex-direction: column;
@@ -165,4 +156,12 @@ body {
   .Clasificacion-image {
     margin-bottom: 8px;
   }
+  
+  :target::before {
+    content: "";
+    display: block;
+    height: 200px;
+    margin-top: -100px;
+    visibility: hidden;
+}
 }
